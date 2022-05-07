@@ -1,0 +1,32 @@
+program:
+
+h=$(date +"%H")
+if [ $h -gt 6 -a $h -le 12 ]
+then
+echo good morning
+elif [ $h -gt 12 -a $h -le 16 ]
+then 
+echo good afternoon
+elif [ $h -gt 16 -a $h -le 20 ]
+then
+echo good evening
+else
+echo good night
+fi
+
+
+
+
+
+
+output:
+
+Last login: Sat May  7 15:01:14 on ttys000
+MES22s-Mac-mini:~ mca$ cd Desktop
+MES22s-Mac-mini:Desktop mca$ vim dev.sh
+MES22s-Mac-mini:Desktop mca$ chmod +x dev.sh
+MES22s-Mac-mini:Desktop mca$ ./dev.sh
+good afternoon
+
+
+

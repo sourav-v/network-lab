@@ -1,0 +1,31 @@
+program:
+echo "---- EVEN OR ODD IN SHELL SCRIPT -----"
+echo -n "Enter a number:"
+read n
+echo -n "RESULT: "
+if [ `expr $n % 2` == 0 ]
+then
+	echo "$n is even"
+else
+	echo "$n is Odd"
+fi
+
+
+
+output:
+
+MES22s-Mac-mini:~ mca$ cd Desktop
+MES22s-Mac-mini:Desktop mca$  vim evenodd.sh
+MES22s-Mac-mini:Desktop mca$ chmod +x evenodd.sh
+MES22s-Mac-mini:Desktop mca$ ./evenodd.sh
+---- EVEN OR ODD IN SHELL SCRIPT -----
+Enter a number:11
+RESULT: 11 is Odd
+
+MES22s-Mac-mini:Desktop mca$ ./evenodd.sh
+---- EVEN OR ODD IN SHELL SCRIPT -----
+Enter a number:12
+RESULT: 12 is even
+MES22s-Mac-mini:Desktop mca$ 
+
+
